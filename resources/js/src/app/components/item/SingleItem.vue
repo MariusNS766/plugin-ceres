@@ -56,9 +56,13 @@
 
                             <item-price :show-cross-price="isRecommendedPriceActive"></item-price>
 
+<graduated-prices></graduated-prices>
+
+In stock: {{ currentVariation.stock.net }}
+
                             <slot name="after-price"></slot>
+
                             
-                            <graduated-prices></graduated-prices>
 
                             <item-availability></item-availability>
 

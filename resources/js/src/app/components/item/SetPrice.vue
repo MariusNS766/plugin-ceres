@@ -16,11 +16,15 @@
                     ) }}
                 </template>
 
-                <template v-else>
+<template v-else>
+                    {{ dynamicPrice/1.19 | currency(currentVariation.prices.set.currency) }}
+                </template>
+
+                (<template v-else>
                     {{ dynamicPrice | currency(currentVariation.prices.set.currency) }}
                 </template>
             </span>
-            <sup>*SetP</sup>
+            <sup>*</sup>)
         </span>
     </div>
 </template>

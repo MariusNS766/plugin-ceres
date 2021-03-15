@@ -21,11 +21,14 @@
                     ) }}
                 </template>
 
-                <template v-else>
+<template v-else>
+                    {{ variationTotalPrice/1.19 | currency(currentVariation.prices.default.currency) }}
+                </template>
+               ( <template v-else>
                     {{ variationTotalPrice | currency(currentVariation.prices.default.currency) }}
                 </template>
             </span>
-            <sup>***</sup>
+            <sup>*</sup>)
         </span>
 
         <!-- class .is-single-piece is added for customers to hide the unit if it is C62 -->
