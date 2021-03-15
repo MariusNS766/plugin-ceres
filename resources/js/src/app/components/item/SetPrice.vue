@@ -20,7 +20,7 @@
                     {{ dynamicPrice | currency(currentVariation.prices.set.currency) }}
                 </template>
             </span>
-            <sup>*</sup>
+            <sup>*SetP</sup>
         </span>
     </div>
 </template>

@@ -52,11 +52,13 @@
                                 <order-property-list></order-property-list>
                             </div>
 
-                            <graduated-prices></graduated-prices>
+                            
 
                             <item-price :show-cross-price="isRecommendedPriceActive"></item-price>
 
                             <slot name="after-price"></slot>
+                            
+                            <graduated-prices></graduated-prices>
 
                             <item-availability></item-availability>
 
